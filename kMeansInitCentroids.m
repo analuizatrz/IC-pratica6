@@ -12,14 +12,14 @@ centroids = zeros(K, size(X, 2));
 % Instructions: You should set centroids to randomly chosen examples from
 %               the dataset X
 %
+%max = max(X,[],1);
+%min = min(X,[],1);
+%for i = centroids
+%centroids(i,:) = 
 
-
-
-
-
-
-
-
+%http://octave.1599824.n4.nabble.com/Extracting-random-elements-from-an-array-td3456573.html
+suffle = randperm(X,1)
+centroids = X(shuffle(1:K),:)
 % =============================================================
 
 end
